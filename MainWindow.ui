@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1044</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GUI openFoam</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/1.png</normaloff>icons/1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>7</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1044</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionOpenProject"/>
+    <addaction name="actionCreateProject"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveChangesProject"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <addaction name="actionParaView"/>
+    <addaction name="separator"/>
+    <addaction name="actionResiduals"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenProjFolder"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionFAO"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="actionConsole"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Редактирование</string>
+    </property>
+    <addaction name="actionEditfvSchemes"/>
+    <addaction name="actionEditfvSolution"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionFAO">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Открыть проект</string>
+   </property>
+  </action>
+  <action name="actionCreateProject">
+   <property name="text">
+    <string>Новый проект</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
+  <action name="actionAddConstant">
+   <property name="text">
+    <string>Добавить константу</string>
+   </property>
+  </action>
+  <action name="actionAddBeginValue">
+   <property name="text">
+    <string>Добавить начальное значение</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Открыть папку с проектом</string>
+   </property>
+  </action>
+  <action name="actionOpenProjFolder">
+   <property name="text">
+    <string>Открыть папку с проектом в проводнике</string>
+   </property>
+  </action>
+  <action name="actionOpenProject">
+   <property name="text">
+    <string>Открыть проект</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSaveChangesProject">
+   <property name="text">
+    <string>Сохранить изменения</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Консоль</string>
+   </property>
+  </action>
+  <action name="actionEditfvSchemes">
+   <property name="text">
+    <string>Файл fvSchemes</string>
+   </property>
+  </action>
+  <action name="actionEditfvSolution">
+   <property name="text">
+    <string>Файл fvSolution</string>
+   </property>
+  </action>
+  <action name="actionResiduals">
+   <property name="text">
+    <string>Графики остатков моделирования</string>
+   </property>
+  </action>
+  <action name="actionParaView">
+   <property name="text">
+    <string>Открыть модель в ParaView</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
